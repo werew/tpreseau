@@ -1,0 +1,61 @@
+            OSPFv3 Router with ID (2.2.2.2) (Process ID 1)
+
+		Router Link States (Area 0.0.0.0)
+
+ADV Router      Age         Seq#        Fragment ID  Link count  Bits
+1.1.1.1         311         0x80000028  0            1           None
+2.2.2.2         301         0x8000002B  0            1           B
+
+		Net Link States (Area 0.0.0.0)
+
+ADV Router      Age         Seq#        Link ID    Rtr count
+2.2.2.2         306         0x80000004  1041       2
+
+		Inter Area Prefix Link States (Area 0.0.0.0)
+
+ADV Router      Age         Seq#      	Prefix
+2.2.2.2         341         0x80000001  2001:DB8:23::/64
+
+		Inter Area Router Link States (Area 0.0.0.0)
+
+ADV Router      Age         Seq#        Link ID    Dest RtrID
+2.2.2.2         297         0x80000001  50529027   3.3.3.3
+          
+                Link (Type-8) Link States (Area 0.0.0.0)
+          
+ADV Router      Age         Seq#        Link ID    Interface
+1.1.1.1         827         0x80000002  1041       Fa0/23
+2.2.2.2         346         0x80000002  1041       Fa0/23
+          
+                Intra Area Prefix Link States (Area 0.0.0.0)
+          
+ADV Router      Age         Seq#        Link ID    Ref-lstype  Ref-LSID
+2.2.2.2         309         0x80000004  2041       0x2002      1041
+          
+                Router Link States (Area 3.3.3.3)
+          
+ADV Router      Age         Seq#        Fragment ID  Link count  Bits
+2.2.2.2         308         0x8000000D  0            1           B
+3.3.3.3         310         0x80000011  0            1           E
+          
+                Net Link States (Area 3.3.3.3)
+          
+ADV Router      Age         Seq#        Link ID    Rtr count
+3.3.3.3         305         0x80000004  1041       2
+          
+                Inter Area Prefix Link States (Area 3.3.3.3)
+          
+ADV Router      Age         Seq#      	Prefix
+2.2.2.2         347         0x80000001  2001:DB8:12::/64
+          
+                Link (Type-8) Link States (Area 3.3.3.3)
+          
+ADV Router      Age         Seq#        Link ID    Interface
+2.2.2.2         350         0x80000002  1042       Fa0/24
+3.3.3.3         832         0x80000002  1041       Fa0/24
+          
+                Intra Area Prefix Link States (Area 3.3.3.3)
+          
+ADV Router      Age         Seq#        Link ID    Ref-lstype  Ref-LSID
+3.3.3.3         308         0x80000004  2041       0x2002      1041
+

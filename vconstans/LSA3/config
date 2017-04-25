@@ -1,0 +1,153 @@
+Building configuration...
+
+Current configuration : 2425 bytes
+!
+version 12.2
+no service pad
+service timestamps debug uptime
+service timestamps log uptime
+no service password-encryption
+!
+hostname Switch
+!
+!
+no aaa new-model
+ip subnet-zero
+!
+ipv6 unicast-routing
+!
+!
+!
+!
+!
+no file verify auto
+spanning-tree mode pvst
+spanning-tree extend system-id
+!         
+vlan internal allocation policy ascending
+!         
+!         
+interface FastEthernet0/1
+ no switchport
+ no ip address
+ no ip route-cache
+ ipv6 address 2001:DB8:2::FFFF/64
+ spanning-tree portfast
+!         
+interface FastEthernet0/2
+ spanning-tree portfast
+!         
+interface FastEthernet0/3
+ spanning-tree portfast
+!         
+interface FastEthernet0/4
+ spanning-tree portfast
+!         
+interface FastEthernet0/5
+ spanning-tree portfast
+!         
+interface FastEthernet0/6
+ spanning-tree portfast
+!         
+interface FastEthernet0/7
+ spanning-tree portfast
+!         
+interface FastEthernet0/8
+ spanning-tree portfast
+!         
+interface FastEthernet0/9
+ spanning-tree portfast
+!         
+interface FastEthernet0/10
+ spanning-tree portfast
+!         
+interface FastEthernet0/11
+ spanning-tree portfast
+!         
+interface FastEthernet0/12
+ switchport access vlan 3
+ switchport mode access
+ spanning-tree portfast
+!         
+interface FastEthernet0/13
+ switchport access vlan 2
+ switchport mode access
+ spanning-tree portfast
+!         
+interface FastEthernet0/14
+ spanning-tree portfast
+!         
+interface FastEthernet0/15
+ spanning-tree portfast
+!         
+interface FastEthernet0/16
+ spanning-tree portfast
+!         
+interface FastEthernet0/17
+ spanning-tree portfast
+!         
+interface FastEthernet0/18
+ spanning-tree portfast
+!         
+interface FastEthernet0/19
+ spanning-tree portfast
+!         
+interface FastEthernet0/20
+ spanning-tree portfast
+!         
+interface FastEthernet0/21
+ spanning-tree portfast
+!         
+interface FastEthernet0/22
+ spanning-tree portfast
+!         
+interface FastEthernet0/23
+ no switchport
+ no ip address
+ no ip route-cache
+ ipv6 address 2001:DB8:12::2/64
+ ipv6 address 2001:DB8:12::/64 eui-64
+ ipv6 nd suppress-ra
+ ipv6 ospf network broadcast
+ ipv6 ospf 1 area 0.0.0.0
+ spanning-tree portfast
+!         
+interface FastEthernet0/24
+ no switchport
+ no ip address
+ ipv6 address 2001:DB8:23::2/64
+ no ipv6 cef
+ ipv6 ospf 1 area 3.3.3.3
+ spanning-tree portfast
+!         
+interface GigabitEthernet0/1
+!         
+interface GigabitEthernet0/2
+!         
+interface Vlan1
+ no ip address
+ no ip route-cache
+ shutdown 
+!         
+ip classless
+ip http server
+ip http secure-server
+!         
+!         
+ipv6 ospf name-lookup
+!         
+ipv6 router ospf 1
+ router-id 2.2.2.2
+ log-adjacency-changes
+!         
+!         
+control-plane
+!         
+!         
+line con 0
+line vty 0 4
+ no login 
+line vty 5 15
+ no login 
+!         
+end 

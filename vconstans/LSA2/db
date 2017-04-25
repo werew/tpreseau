@@ -1,0 +1,24 @@
+            OSPFv3 Router with ID (2.2.2.2) (Process ID 1)
+
+		Router Link States (Area 0.0.0.0)
+
+ADV Router      Age         Seq#        Fragment ID  Link count  Bits
+1.1.1.1         343         0x8000001B  0            1           None
+2.2.2.2         333         0x8000001D  0            1           None
+
+		Net Link States (Area 0.0.0.0)
+
+ADV Router      Age         Seq#        Link ID    Rtr count
+2.2.2.2         343         0x80000001  1041       2
+
+		Link (Type-8) Link States (Area 0.0.0.0)
+
+ADV Router      Age         Seq#        Link ID    Interface
+1.1.1.1         376         0x80000002  1041       Fa0/23
+2.2.2.2         376         0x80000002  1041       Fa0/23
+
+		Intra Area Prefix Link States (Area 0.0.0.0)
+
+ADV Router      Age         Seq#        Link ID    Ref-lstype  Ref-LSID
+2.2.2.2         343         0x80000001  2041       0x2002      1041
+
